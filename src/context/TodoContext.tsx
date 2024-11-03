@@ -14,9 +14,9 @@ interface ContextProps {
 
 const TodoContext = createContext<ContextProps>({
     todoList: [],
-    addTodo: (todo: Todo) => {},
-    updateTodo: (index: number) => {},
-    deleteTodo: (index: number) => {}
+    addTodo: () => {},
+    updateTodo: () => {},
+    deleteTodo: () => {}
 });
 
 const TodoProvider: FC<TodoProviderProps> = ({ children }) => {
